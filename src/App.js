@@ -1,10 +1,19 @@
 import './App.css';
-import NavBar from './components/SearchBar/SearchBar';
+import SearchBar from './components/SearchBar/SearchBar';
+import QuestionList from './components/Questions/QuestionList';
+import AskForm from './components/AskForm/AskForm';
+import 'bootstrap/dist/css/bootstrap.css';
 
 function App() {
   return (
     <div className="App">
-      <NavBar />
+      <div className="row topRow">
+        <AskForm />
+        <SearchBar />
+      </div>
+      <div className="row">
+        <QuestionList />
+      </div>
     </div>
   );
 }
